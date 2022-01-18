@@ -1,0 +1,72 @@
+﻿<Window x:Class="SMO_AZS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SMO_AZS"
+        xmlns:uc="clr-namespace:SMO_AZS.Models"
+        mc:Ignorable="d"
+        Title="СМО АЗС" Height="450" Width="600" 
+        WindowStartupLocation="CenterScreen" 
+        Loaded="Window_Loaded" 
+        ResizeMode="NoResize">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel>
+            <UniformGrid Columns="3" VerticalAlignment="Top">
+                <StackPanel>
+                    <Label>Число каналов</Label>
+                    <uc:NumericTextBox Text="{Binding Число_каналов}"/>
+                </StackPanel>
+
+                <StackPanel Margin="5 0">
+                    <Label>Тип очереди</Label>
+                    <ComboBox Name="CmbTypeQueue" SelectedIndex="0">
+                        <ComboBoxItem>С отказом</ComboBoxItem>
+                        <ComboBoxItem>С ограничением длины</ComboBoxItem>
+                        <ComboBoxItem>С неограниченным ожиданием</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel>
+                    <StackPanel.Style>
+                        <Style TargetType="StackPanel">
+                            <Setter Property="IsEnabled" Value="False"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding ElementName=CmbTypeQueue, Path=SelectedIndex}" Value="1">
+                                    <Setter Property="IsEnabled" Value="True"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </StackPanel.Style>
+
+                    <Label>Длина очереди</Label>
+                    <uc:NumericTextBox x:Name="TBLengthQueue"/>
+                </StackPanel>
+            </UniformGrid>
+
+            <StackPanel>
+                <StackPanel>
+                    <Label>Число клиентов, поступивших в час</Label>
+                    <uc:NumericTextBox Text="{Binding Число_клиентов__поступивших_в_час}"/>
+                </StackPanel>
+
+                <StackPanel>
+                    <Label>Среднее время обслуживания одной заявки (в минутах)</Label>
+                    <uc:NumericTextBox Text="{Binding Среднее_время_обслуживания_одной_заявки__в_минутах_}"/>
+                </StackPanel>
+
+                <StackPanel>
+                    <Label>Время моделирования работы СМО (в минутах)</Label>
+                    <uc:NumericTextBox Text="{Binding Время_моделирования_работы_СМО__в_минутах_}"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+
+        <Button Grid.Row="1" HorizontalAlignment="Center" Click="Button_Click">Вычислить параметры СМО</Button>
+    </Grid>
+</Window>

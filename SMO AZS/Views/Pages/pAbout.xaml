@@ -1,0 +1,33 @@
+﻿<Page x:Class="SMO_AZS.Views.Pages.pAbout"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SMO_AZS.Views.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="600"
+      Title="Стартовая страница">
+    <Page.Resources>
+        <Style TargetType="TextBlock" BasedOn="{StaticResource TBlLable}"/>
+    </Page.Resources>
+    
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Image Source="../../Images/logo.png" Height="150" Width="150"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock>Название программы:</TextBlock>
+                <TextBlock FontWeight="Normal">СМО АЗС</TextBlock>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <TextBlock>Версия:</TextBlock>
+                <TextBlock FontWeight="Normal">1.0</TextBlock>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <TextBlock>Разработчик:</TextBlock>
+                <TextBlock FontWeight="Normal">Калинаев Максим, группа 1281</TextBlock>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

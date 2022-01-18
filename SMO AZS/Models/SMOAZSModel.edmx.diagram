@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1796b7311a66481fb07015b911677c44" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.Исходные_данные" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Очередь_с_неограниченным_ожиданием" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Очередь_с_ограничением_длины" Width="1.5" PointX="5.25" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Очередь_с_отказом" Width="1.5" PointX="5.25" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Эксперимент" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK__Исходные___Экспе__267ABA7A" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Очередь_с__Исход__29572725" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Очередь_с__Исход__2C3393D0" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Очередь_с__Исход__2F10007B" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

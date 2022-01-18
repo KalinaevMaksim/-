@@ -1,0 +1,74 @@
+﻿<Page x:Class="SMO_AZS.Views.Pages.pOutputResult"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SMO_AZS.Views.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Вывод данных"
+      Loaded="Page_Loaded">
+    <Page.Resources>
+        <Style TargetType="TextBox" BasedOn="{StaticResource MaterialDesignTextBox}">
+            <Setter Property="IsReadOnly" Value="True"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+        <Style TargetType="TextBlock" BasedOn="{StaticResource TBlLable}"/>
+    </Page.Resources>
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <DockPanel>
+            <UniformGrid Rows="2">
+                <TextBlock Text="Интенсивность потока обслуживания:"/>
+                <TextBlock Text="Интенсивность нагрузки:"/>
+            </UniformGrid>
+
+            <UniformGrid Rows="2">
+                <TextBox x:Name="TBp"/>
+                <TextBox x:Name="TBu"/>
+            </UniformGrid>
+        </DockPanel>
+
+        <DockPanel Grid.Row="1">
+            <ScrollViewer>
+                <ItemsControl x:Name="LstVResults">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Style="{StaticResource TBlLable}">Число каналов:</TextBlock>
+                                    <TextBlock Style="{StaticResource TBlLable}" FontWeight="Normal" Text="{Binding Исходные_Данные.Число_каналов}"></TextBlock>
+                                </StackPanel>
+
+                                <ItemsControl ItemsSource="{Binding PropertiesValue}">
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <DockPanel>
+                                                <TextBlock TextWrapping="Wrap" MaxWidth="500" Style="{StaticResource TBlLable}" Text="{Binding Key}"/>
+                                                <TextBox HorizontalAlignment="Right" Text="{Binding Value, Mode=OneWay}"/>
+                                            </DockPanel>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+            
+            <Frame x:Name="FrDiagram"/>
+        </DockPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Center" Margin="0 10 0 0">
+            <Button x:Name="BtnExportFile" Click="BtnExportFile_Click">Экспорт данных в файл</Button>
+            <Button Margin="10 0 0 0" x:Name="BtnCreateReport" Click="BtnCreateReport_Click">Вывод отчёта в Word</Button>
+        </StackPanel>
+    </Grid>
+</Page>
