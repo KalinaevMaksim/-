@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище Model" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Опыт">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Число каналов" Type="int" Nullable="false" />
+    <Property Name="Число клиентов, поступивших в час" Type="int" Nullable="false" />
+    <Property Name="Среднее время обслуживания одной заявки (в минутах)" Type="int" Nullable="false" />
+    <Property Name="Время моделирования работы СМО (в минутах)" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Очередь с неограниченным ожиданием">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Опыт" Type="int" Nullable="false" />
+    <Property Name="Вероятность простоя каналов обслуживания, когда нет заявок" Type="float" Nullable="false" />
+    <Property Name="Вероятность занятости обслуживанием k заявок" Type="float" Nullable="false" />
+    <Property Name="Вероятность занятости обслуживанием всех каналов" Type="float" Nullable="false" />
+    <Property Name="Вероятность того, что заявка окажется в очереди" Type="float" Nullable="false" />
+    <Property Name="Среднее число заявок в очереди" Type="float" Nullable="false" />
+    <Property Name="Среднее время ожидания заявки в очереди" Type="float" Nullable="false" />
+    <Property Name="Среднее время пребывания заявки в СМО" Type="float" Nullable="false" />
+    <Property Name="Среднее число занятых обслуживанием каналов" Type="float" Nullable="false" />
+    <Property Name="Среднее число свободных каналов" Type="float" Nullable="false" />
+    <Property Name="Коэффициент занятости каналов обслуживания" Type="float" Nullable="false" />
+    <Property Name="Среднее число заявок в СМО" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Очередь с ограничением длины">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Опыт" Type="int" Nullable="false" />
+    <Property Name="Длина очереди" Type="int" Nullable="false" />
+    <Property Name="Вероятность простоя каналов обслуживания, когда нет заявок" Type="float" Nullable="false" />
+    <Property Name="Вероятность отказа в обслуживании" Type="float" Nullable="false" />
+    <Property Name="Вероятность обслуживания" Type="float" Nullable="false" />
+    <Property Name="Абсолютная пропускная способность" Type="float" Nullable="false" />
+    <Property Name="Среднее число занятых каналов" Type="float" Nullable="false" />
+    <Property Name="Среднее число заявок в очереди" Type="float" Nullable="false" />
+    <Property Name="Среднее время ожидания обслуживания" Type="float" Nullable="false" />
+    <Property Name="Среднее число заявок в системе" Type="float" Nullable="false" />
+    <Property Name="Среднее время пребывания в системе" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Очередь с отказом">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Опыт" Type="int" Nullable="false" />
+    <Property Name="Вероятность простоя каналов обслуживания, когда нет заявок" Type="float" Nullable="false" />
+    <Property Name="Вероятность отказа в обслуживании, когда поступившая на обслуживание заявка найдет всеканалы занятыми" Type="float" Nullable="false" />
+    <Property Name="Вероятность обслуживания" Type="float" Nullable="false" />
+    <Property Name="Среднее число занятых обслуживанием каналов" Type="float" Nullable="false" />
+    <Property Name="Доля каналов, занятых обслуживанием" Type="float" Nullable="false" />
+    <Property Name="Абсолютная пропускная способность СМО" Type="float" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Очередь с __Опыт__267ABA7A">
+    <End Role="Опыт" Type="Self.Опыт" Multiplicity="1" />
+    <End Role="Очередь с отказом" Type="Self.Очередь с отказом" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Опыт">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Очередь с отказом">
+        <PropertyRef Name="Опыт" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Очередь с __Опыт__29572725">
+    <End Role="Опыт" Type="Self.Опыт" Multiplicity="1" />
+    <End Role="Очередь с ограничением длины" Type="Self.Очередь с ограничением длины" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Опыт">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Очередь с ограничением длины">
+        <PropertyRef Name="Опыт" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Очередь с __Опыт__2C3393D0">
+    <End Role="Опыт" Type="Self.Опыт" Multiplicity="1" />
+    <End Role="Очередь с неограниченным ожиданием" Type="Self.Очередь с неограниченным ожиданием" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Опыт">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Очередь с неограниченным ожиданием">
+        <PropertyRef Name="Опыт" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище ModelContainer">
+    <EntitySet Name="Опыт" EntityType="Self.Опыт" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Очередь с неограниченным ожиданием" EntityType="Self.Очередь с неограниченным ожиданием" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Очередь с ограничением длины" EntityType="Self.Очередь с ограничением длины" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Очередь с отказом" EntityType="Self.Очередь с отказом" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Очередь с __Опыт__267ABA7A" Association="Self.FK__Очередь с __Опыт__267ABA7A">
+      <End Role="Опыт" EntitySet="Опыт" />
+      <End Role="Очередь с отказом" EntitySet="Очередь с отказом" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Очередь с __Опыт__29572725" Association="Self.FK__Очередь с __Опыт__29572725">
+      <End Role="Опыт" EntitySet="Опыт" />
+      <End Role="Очередь с ограничением длины" EntitySet="Очередь с ограничением длины" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Очередь с __Опыт__2C3393D0" Association="Self.FK__Очередь с __Опыт__2C3393D0">
+      <End Role="Опыт" EntitySet="Опыт" />
+      <End Role="Очередь с неограниченным ожиданием" EntitySet="Очередь с неограниченным ожиданием" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

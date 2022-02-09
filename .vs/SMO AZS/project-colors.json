@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "af4a1460-5912-434a-abda-0c983699f47f": {
+      "ProjectGuid": "af4a1460-5912-434a-abda-0c983699f47f",
+      "DisplayName": "SMO AZS",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    },
+    "25405857-04f2-46ea-9697-994c269be958": {
+      "ProjectGuid": "25405857-04f2-46ea-9697-994c269be958",
+      "DisplayName": "UnitTestProject",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Опыт">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Число_каналов" Type="Int32" Nullable="false" />
+    <Property Name="Число_клиентов__поступивших_в_час" Type="Int32" Nullable="false" />
+    <Property Name="Среднее_время_обслуживания_одной_заявки__в_минутах_" Type="Int32" Nullable="false" />
+    <Property Name="Время_моделирования_работы_СМО__в_минутах_" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Очередь_с_отказом" Relationship="Self.FK__Очередь_с___Опыт__267ABA7A" FromRole="Опыт" ToRole="Очередь_с_отказом" />
+    <NavigationProperty Name="Очередь_с_ограничением_длины" Relationship="Self.FK__Очередь_с___Опыт__29572725" FromRole="Опыт" ToRole="Очередь_с_ограничением_длины" />
+    <NavigationProperty Name="Очередь_с_неограниченным_ожиданием" Relationship="Self.FK__Очередь_с___Опыт__2C3393D0" FromRole="Опыт" ToRole="Очередь_с_неограниченным_ожиданием" />
+  </EntityType>
+  <EntityType Name="Очередь_с_неограниченным_ожиданием">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Опыт" Type="Int32" Nullable="false" />
+    <Property Name="Вероятность_простоя_каналов_обслуживания__когда_нет_заявок" Type="Double" Nullable="false" />
+    <Property Name="Вероятность_занятости_обслуживанием_k_заявок" Type="Double" Nullable="false" />
+    <Property Name="Вероятность_занятости_обслуживанием_всех_каналов" Type="Double" Nullable="false" />
+    <Property Name="Вероятность_того__что_заявка_окажется_в_очереди" Type="Double" Nullable="false" />
+    <Property Name="Среднее_число_заявок_в_очереди" Type="Double" Nullable="false" />
+    <Property Name="Среднее_время_ожидания_заявки_в_очереди" Type="Double" Nullable="false" />
+    <Property Name="Среднее_время_пребывания_заявки_в_СМО" Type="Double" Nullable="false" />
+    <Property Name="Среднее_число_занятых_обслуживанием_каналов" Type="Double" Nullable="false" />
+    <Property Name="Среднее_число_свободных_каналов" Type="Double" Nullable="false" />
+    <Property Name="Коэффициент_занятости_каналов_обслуживания" Type="Double" Nullable="false" />
+    <Property Name="Среднее_число_заявок_в_СМО" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Опыт1" Relationship="Self.FK__Очередь_с___Опыт__2C3393D0" FromRole="Очередь_с_неограниченным_ожиданием" ToRole="Опыт" />
+  </EntityType>
+  <EntityType Name="Очередь_с_ограничением_длины">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Опыт" Type="Int32" Nullable="false" />
+    <Property Name="Вероятность_простоя_каналов_обслуживания__когда_нет_заявок" Type="Double" Nullable="false" />
+    <Property Name="Вероятность_отказа_в_обслуживании" Type="Double" Nullable="false" />
+    <Property Name="Вероятность_обслуживания" Type="Double" Nullable="false" />
+    <Property Name="Абсолютная_пропускная_способность" Type="Double" Nullable="false" />
+    <Property Name="Среднее_число_занятых_каналов" Type="Double" Nullable="false" />
+    <Property Name="Среднее_число_заявок_в_очереди" Type="Double" Nullable="false" />
+    <Property Name="Среднее_время_ожидания_обслуживания" Type="Double" Nullable="false" />
+    <Property Name="Среднее_число_заявок_в_системе" Type="Double" Nullable="false" />
+    <Property Name="Среднее_время_пребывания_в_системе" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Опыт1" Relationship="Self.FK__Очередь_с___Опыт__29572725" FromRole="Очередь_с_ограничением_длины" ToRole="Опыт" />
+    <Property Name="Длина_очереди" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Очередь_с_отказом">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Опыт" Type="Int32" Nullable="false" />
+    <Property Name="Вероятность_простоя_каналов_обслуживания__когда_нет_заявок" Type="Double" Nullable="false" />
+    <Property Name="Вероятность_отказа_в_обслуживании__когда_поступившая_на_обслуживание_заявка_найдет_всеканалы_занятыми" Type="Double" Nullable="false" />
+    <Property Name="Вероятность_обслуживания" Type="Double" Nullable="false" />
+    <Property Name="Среднее_число_занятых_обслуживанием_каналов" Type="Double" Nullable="false" />
+    <Property Name="Доля_каналов__занятых_обслуживанием" Type="Double" Nullable="false" />
+    <Property Name="Абсолютная_пропускная_способность_СМО" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Опыт1" Relationship="Self.FK__Очередь_с___Опыт__267ABA7A" FromRole="Очередь_с_отказом" ToRole="Опыт" />
+  </EntityType>
+  <Association Name="FK__Очередь_с___Опыт__267ABA7A">
+    <End Role="Опыт" Type="Self.Опыт" Multiplicity="1" />
+    <End Role="Очередь_с_отказом" Type="Self.Очередь_с_отказом" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Опыт">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Очередь_с_отказом">
+        <PropertyRef Name="Опыт" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Очередь_с___Опыт__29572725">
+    <End Role="Опыт" Type="Self.Опыт" Multiplicity="1" />
+    <End Role="Очередь_с_ограничением_длины" Type="Self.Очередь_с_ограничением_длины" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Опыт">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Очередь_с_ограничением_длины">
+        <PropertyRef Name="Опыт" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Очередь_с___Опыт__2C3393D0">
+    <End Role="Опыт" Type="Self.Опыт" Multiplicity="1" />
+    <End Role="Очередь_с_неограниченным_ожиданием" Type="Self.Очередь_с_неограниченным_ожиданием" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Опыт">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Очередь_с_неограниченным_ожиданием">
+        <PropertyRef Name="Опыт" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="СМО_АЗСEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Опыт" EntityType="Self.Опыт" />
+    <EntitySet Name="Очередь_с_неограниченным_ожиданием" EntityType="Self.Очередь_с_неограниченным_ожиданием" />
+    <EntitySet Name="Очередь_с_ограничением_длины" EntityType="Self.Очередь_с_ограничением_длины" />
+    <EntitySet Name="Очередь_с_отказом" EntityType="Self.Очередь_с_отказом" />
+    <AssociationSet Name="FK__Очередь_с___Опыт__267ABA7A" Association="Self.FK__Очередь_с___Опыт__267ABA7A">
+      <End Role="Опыт" EntitySet="Опыт" />
+      <End Role="Очередь_с_отказом" EntitySet="Очередь_с_отказом" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Очередь_с___Опыт__29572725" Association="Self.FK__Очередь_с___Опыт__29572725">
+      <End Role="Опыт" EntitySet="Опыт" />
+      <End Role="Очередь_с_ограничением_длины" EntitySet="Очередь_с_ограничением_длины" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Очередь_с___Опыт__2C3393D0" Association="Self.FK__Очередь_с___Опыт__2C3393D0">
+      <End Role="Опыт" EntitySet="Опыт" />
+      <End Role="Очередь_с_неограниченным_ожиданием" EntitySet="Очередь_с_неограниченным_ожиданием" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

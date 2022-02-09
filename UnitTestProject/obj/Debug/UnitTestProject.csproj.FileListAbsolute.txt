@@ -1,0 +1,38 @@
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\ru\Microsoft.TestPlatform.AdapterUtilities.resources.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\ru\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\UnitTestProject.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\UnitTestProject.pdb
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\SMO AZS.exe
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\LiveCharts.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\LiveCharts.Wpf.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\DocumentFormat.OpenXml.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\Newtonsoft.Json.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\WpfMath.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\EntityFramework.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\SMO AZS.pdb
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\SMO AZS.exe.config
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\LiveCharts.pdb
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\LiveCharts.xml
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\LiveCharts.Wpf.pdb
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\LiveCharts.Wpf.xml
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\DocumentFormat.OpenXml.xml
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\Newtonsoft.Json.xml
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\EntityFramework.xml
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\bin\Debug\ru\EntityFramework.resources.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\obj\Debug\UnitTestProject.csproj.AssemblyReference.cache
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\obj\Debug\UnitTestProject.csproj.CoreCompileInputs.cache
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\obj\Debug\UnitTestProject.csproj.CopyComplete
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\obj\Debug\UnitTestProject.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\UnitTestProject\obj\Debug\UnitTestProject.pdb

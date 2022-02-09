@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище ModelContainer" CdmEntityContainer="СМО_АЗСEntities">
+    <EntitySetMapping Name="Опыт">
+      <EntityTypeMapping TypeName="Model.Опыт">
+        <MappingFragment StoreEntitySet="Опыт">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Число_каналов" ColumnName="Число каналов" />
+          <ScalarProperty Name="Число_клиентов__поступивших_в_час" ColumnName="Число клиентов, поступивших в час" />
+          <ScalarProperty Name="Среднее_время_обслуживания_одной_заявки__в_минутах_" ColumnName="Среднее время обслуживания одной заявки (в минутах)" />
+          <ScalarProperty Name="Время_моделирования_работы_СМО__в_минутах_" ColumnName="Время моделирования работы СМО (в минутах)" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Очередь_с_неограниченным_ожиданием">
+      <EntityTypeMapping TypeName="Model.Очередь_с_неограниченным_ожиданием">
+        <MappingFragment StoreEntitySet="Очередь с неограниченным ожиданием">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Опыт" ColumnName="Опыт" />
+          <ScalarProperty Name="Вероятность_простоя_каналов_обслуживания__когда_нет_заявок" ColumnName="Вероятность простоя каналов обслуживания, когда нет заявок" />
+          <ScalarProperty Name="Вероятность_занятости_обслуживанием_k_заявок" ColumnName="Вероятность занятости обслуживанием k заявок" />
+          <ScalarProperty Name="Вероятность_занятости_обслуживанием_всех_каналов" ColumnName="Вероятность занятости обслуживанием всех каналов" />
+          <ScalarProperty Name="Вероятность_того__что_заявка_окажется_в_очереди" ColumnName="Вероятность того, что заявка окажется в очереди" />
+          <ScalarProperty Name="Среднее_число_заявок_в_очереди" ColumnName="Среднее число заявок в очереди" />
+          <ScalarProperty Name="Среднее_время_ожидания_заявки_в_очереди" ColumnName="Среднее время ожидания заявки в очереди" />
+          <ScalarProperty Name="Среднее_время_пребывания_заявки_в_СМО" ColumnName="Среднее время пребывания заявки в СМО" />
+          <ScalarProperty Name="Среднее_число_занятых_обслуживанием_каналов" ColumnName="Среднее число занятых обслуживанием каналов" />
+          <ScalarProperty Name="Среднее_число_свободных_каналов" ColumnName="Среднее число свободных каналов" />
+          <ScalarProperty Name="Коэффициент_занятости_каналов_обслуживания" ColumnName="Коэффициент занятости каналов обслуживания" />
+          <ScalarProperty Name="Среднее_число_заявок_в_СМО" ColumnName="Среднее число заявок в СМО" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Очередь_с_ограничением_длины">
+      <EntityTypeMapping TypeName="Model.Очередь_с_ограничением_длины">
+        <MappingFragment StoreEntitySet="Очередь с ограничением длины">
+          <ScalarProperty Name="Длина_очереди" ColumnName="Длина очереди" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Опыт" ColumnName="Опыт" />
+          <ScalarProperty Name="Вероятность_простоя_каналов_обслуживания__когда_нет_заявок" ColumnName="Вероятность простоя каналов обслуживания, когда нет заявок" />
+          <ScalarProperty Name="Вероятность_отказа_в_обслуживании" ColumnName="Вероятность отказа в обслуживании" />
+          <ScalarProperty Name="Вероятность_обслуживания" ColumnName="Вероятность обслуживания" />
+          <ScalarProperty Name="Абсолютная_пропускная_способность" ColumnName="Абсолютная пропускная способность" />
+          <ScalarProperty Name="Среднее_число_занятых_каналов" ColumnName="Среднее число занятых каналов" />
+          <ScalarProperty Name="Среднее_число_заявок_в_очереди" ColumnName="Среднее число заявок в очереди" />
+          <ScalarProperty Name="Среднее_время_ожидания_обслуживания" ColumnName="Среднее время ожидания обслуживания" />
+          <ScalarProperty Name="Среднее_число_заявок_в_системе" ColumnName="Среднее число заявок в системе" />
+          <ScalarProperty Name="Среднее_время_пребывания_в_системе" ColumnName="Среднее время пребывания в системе" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Очередь_с_отказом">
+      <EntityTypeMapping TypeName="Model.Очередь_с_отказом">
+        <MappingFragment StoreEntitySet="Очередь с отказом">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Опыт" ColumnName="Опыт" />
+          <ScalarProperty Name="Вероятность_простоя_каналов_обслуживания__когда_нет_заявок" ColumnName="Вероятность простоя каналов обслуживания, когда нет заявок" />
+          <ScalarProperty Name="Вероятность_отказа_в_обслуживании__когда_поступившая_на_обслуживание_заявка_найдет_всеканалы_занятыми" ColumnName="Вероятность отказа в обслуживании, когда поступившая на обслуживание заявка найдет всеканалы занятыми" />
+          <ScalarProperty Name="Вероятность_обслуживания" ColumnName="Вероятность обслуживания" />
+          <ScalarProperty Name="Среднее_число_занятых_обслуживанием_каналов" ColumnName="Среднее число занятых обслуживанием каналов" />
+          <ScalarProperty Name="Доля_каналов__занятых_обслуживанием" ColumnName="Доля каналов, занятых обслуживанием" />
+          <ScalarProperty Name="Абсолютная_пропускная_способность_СМО" ColumnName="Абсолютная пропускная способность СМО" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

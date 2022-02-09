@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Единица_измерения_времени">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Название" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Исходные_данные" Relationship="Self.FK__Исходные___Едини__29572725" FromRole="Единица_измерения_времени" ToRole="Исходные_данные" />
+    <NavigationProperty Name="Исходные_данные1" Relationship="Self.FK__Исходные___Едини__2A4B4B5E" FromRole="Единица_измерения_времени" ToRole="Исходные_данные" />
+  </EntityType>
+  <EntityType Name="Исходные_данные">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Эксперимент_Id" Type="Int32" Nullable="false" />
+    <Property Name="Число_каналов" Type="Int32" Nullable="false" />
+    <Property Name="Входной_поток__число_клиентов_" Type="Double" Nullable="false" />
+    <Property Name="Единица_измерения_времени_входного_потока_Id" Type="Int32" Nullable="false" />
+    <Property Name="Среднее_время_обслуживания_одной_заявки" Type="Double" Nullable="false" />
+    <Property Name="Единица_измерения_времени_среднего_времени_обслуживания_одной_заявки_Id" Type="Int32" Nullable="false" />
+    <Property Name="Требуемая_вероятность_обслуживания" Type="Double" />
+    <Property Name="Длина_очереди" Type="Int32" />
+    <NavigationProperty Name="Единица_измерения_времени" Relationship="Self.FK__Исходные___Едини__29572725" FromRole="Исходные_данные" ToRole="Единица_измерения_времени" />
+    <NavigationProperty Name="Единица_измерения_времени1" Relationship="Self.FK__Исходные___Едини__2A4B4B5E" FromRole="Исходные_данные" ToRole="Единица_измерения_времени" />
+    <NavigationProperty Name="Эксперимент" Relationship="Self.FK__Исходные___Экспе__286302EC" FromRole="Исходные_данные" ToRole="Эксперимент" />
+    <NavigationProperty Name="Очередь_с_отказом" Relationship="Self.FK__Очередь_с__Исход__2D27B809" FromRole="Исходные_данные" ToRole="Очередь_с_отказом" />
+    <NavigationProperty Name="Очередь_с_ограничением_длины" Relationship="Self.FK__Очередь_с__Исход__300424B4" FromRole="Исходные_данные" ToRole="Очередь_с_ограничением_длины" />
+    <NavigationProperty Name="Очередь_с_неограниченным_ожиданием" Relationship="Self.FK__Очередь_с__Исход__32E0915F" FromRole="Исходные_данные" ToRole="Очередь_с_неограниченным_ожиданием" />
+  </EntityType>
+  <EntityType Name="Очередь_с_неограниченным_ожиданием">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Исходные_данные_Id" Type="Int32" Nullable="false" />
+    <Property Name="Вероятность_простоя_каналов_обслуживания__когда_нет_заявок" Type="Double" Nullable="false" />
+    <Property Name="Вероятность_занятости_обслуживанием_k_заявок" Type="Double" Nullable="false" />
+    <Property Name="Вероятность_занятости_обслуживанием_всех_каналов" Type="Double" Nullable="false" />
+    <Property Name="Вероятность_того__что_заявка_окажется_в_очереди" Type="Double" Nullable="false" />
+    <Property Name="Среднее_число_заявок_в_очереди" Type="Double" Nullable="false" />
+    <Property Name="Среднее_время_ожидания_заявки_в_очереди" Type="Double" Nullable="false" />
+    <Property Name="Среднее_время_пребывания_заявки_в_СМО" Type="Double" Nullable="false" />
+    <Property Name="Среднее_число_занятых_обслуживанием_каналов" Type="Double" Nullable="false" />
+    <Property Name="Среднее_число_свободных_каналов" Type="Double" Nullable="false" />
+    <Property Name="Коэффициент_занятости_каналов_обслуживания" Type="Double" Nullable="false" />
+    <Property Name="Среднее_число_заявок_в_СМО" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Исходные_данные" Relationship="Self.FK__Очередь_с__Исход__32E0915F" FromRole="Очередь_с_неограниченным_ожиданием" ToRole="Исходные_данные" />
+  </EntityType>
+  <EntityType Name="Очередь_с_ограничением_длины">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Исходные_данные_Id" Type="Int32" Nullable="false" />
+    <Property Name="Вероятность_простоя_каналов_обслуживания__когда_нет_заявок" Type="Double" Nullable="false" />
+    <Property Name="Вероятность_отказа_в_обслуживании" Type="Double" Nullable="false" />
+    <Property Name="Вероятность_обслуживания" Type="Double" Nullable="false" />
+    <Property Name="Абсолютная_пропускная_способность" Type="Double" Nullable="false" />
+    <Property Name="Среднее_число_занятых_каналов" Type="Double" Nullable="false" />
+    <Property Name="Среднее_число_заявок_в_очереди" Type="Double" Nullable="false" />
+    <Property Name="Среднее_время_ожидания_обслуживания" Type="Double" Nullable="false" />
+    <Property Name="Среднее_число_заявок_в_системе" Type="Double" Nullable="false" />
+    <Property Name="Среднее_время_пребывания_в_системе" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Исходные_данные" Relationship="Self.FK__Очередь_с__Исход__300424B4" FromRole="Очередь_с_ограничением_длины" ToRole="Исходные_данные" />
+  </EntityType>
+  <EntityType Name="Очередь_с_отказом">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Исходные_данные_Id" Type="Int32" Nullable="false" />
+    <Property Name="Вероятность_простоя_каналов_обслуживания__когда_нет_заявок" Type="Double" Nullable="false" />
+    <Property Name="Вероятность_отказа_в_обслуживании__когда_поступившая_на_обслуживание_заявка_найдет_всеканалы_занятыми" Type="Double" Nullable="false" />
+    <Property Name="Вероятность_обслуживания" Type="Double" Nullable="false" />
+    <Property Name="Среднее_число_занятых_обслуживанием_каналов" Type="Double" Nullable="false" />
+    <Property Name="Доля_каналов__занятых_обслуживанием" Type="Double" Nullable="false" />
+    <Property Name="Абсолютная_пропускная_способность_СМО" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Исходные_данные" Relationship="Self.FK__Очередь_с__Исход__2D27B809" FromRole="Очередь_с_отказом" ToRole="Исходные_данные" />
+  </EntityType>
+  <EntityType Name="Эксперимент">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Дата_эксперимента" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Постановка_задачи" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Исходные_данные" Relationship="Self.FK__Исходные___Экспе__286302EC" FromRole="Эксперимент" ToRole="Исходные_данные" />
+  </EntityType>
+  <Association Name="FK__Исходные___Едини__29572725">
+    <End Role="Единица_измерения_времени" Type="Self.Единица_измерения_времени" Multiplicity="1" />
+    <End Role="Исходные_данные" Type="Self.Исходные_данные" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Единица_измерения_времени">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Исходные_данные">
+        <PropertyRef Name="Единица_измерения_времени_входного_потока_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Исходные___Едини__2A4B4B5E">
+    <End Role="Единица_измерения_времени" Type="Self.Единица_измерения_времени" Multiplicity="1" />
+    <End Role="Исходные_данные" Type="Self.Исходные_данные" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Единица_измерения_времени">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Исходные_данные">
+        <PropertyRef Name="Единица_измерения_времени_среднего_времени_обслуживания_одной_заявки_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Исходные___Экспе__286302EC">
+    <End Role="Эксперимент" Type="Self.Эксперимент" Multiplicity="1" />
+    <End Role="Исходные_данные" Type="Self.Исходные_данные" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Эксперимент">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Исходные_данные">
+        <PropertyRef Name="Эксперимент_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Очередь_с__Исход__2D27B809">
+    <End Role="Исходные_данные" Type="Self.Исходные_данные" Multiplicity="1" />
+    <End Role="Очередь_с_отказом" Type="Self.Очередь_с_отказом" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Исходные_данные">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Очередь_с_отказом">
+        <PropertyRef Name="Исходные_данные_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Очередь_с__Исход__300424B4">
+    <End Role="Исходные_данные" Type="Self.Исходные_данные" Multiplicity="1" />
+    <End Role="Очередь_с_ограничением_длины" Type="Self.Очередь_с_ограничением_длины" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Исходные_данные">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Очередь_с_ограничением_длины">
+        <PropertyRef Name="Исходные_данные_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Очередь_с__Исход__32E0915F">
+    <End Role="Исходные_данные" Type="Self.Исходные_данные" Multiplicity="1" />
+    <End Role="Очередь_с_неограниченным_ожиданием" Type="Self.Очередь_с_неограниченным_ожиданием" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Исходные_данные">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Очередь_с_неограниченным_ожиданием">
+        <PropertyRef Name="Исходные_данные_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="СМО_АЗСEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Единица_измерения_времени" EntityType="Self.Единица_измерения_времени" />
+    <EntitySet Name="Исходные_данные" EntityType="Self.Исходные_данные" />
+    <EntitySet Name="Очередь_с_неограниченным_ожиданием" EntityType="Self.Очередь_с_неограниченным_ожиданием" />
+    <EntitySet Name="Очередь_с_ограничением_длины" EntityType="Self.Очередь_с_ограничением_длины" />
+    <EntitySet Name="Очередь_с_отказом" EntityType="Self.Очередь_с_отказом" />
+    <EntitySet Name="Эксперимент" EntityType="Self.Эксперимент" />
+    <AssociationSet Name="FK__Исходные___Едини__29572725" Association="Self.FK__Исходные___Едини__29572725">
+      <End Role="Единица_измерения_времени" EntitySet="Единица_измерения_времени" />
+      <End Role="Исходные_данные" EntitySet="Исходные_данные" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Исходные___Едини__2A4B4B5E" Association="Self.FK__Исходные___Едини__2A4B4B5E">
+      <End Role="Единица_измерения_времени" EntitySet="Единица_измерения_времени" />
+      <End Role="Исходные_данные" EntitySet="Исходные_данные" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Исходные___Экспе__286302EC" Association="Self.FK__Исходные___Экспе__286302EC">
+      <End Role="Эксперимент" EntitySet="Эксперимент" />
+      <End Role="Исходные_данные" EntitySet="Исходные_данные" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Очередь_с__Исход__2D27B809" Association="Self.FK__Очередь_с__Исход__2D27B809">
+      <End Role="Исходные_данные" EntitySet="Исходные_данные" />
+      <End Role="Очередь_с_отказом" EntitySet="Очередь_с_отказом" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Очередь_с__Исход__300424B4" Association="Self.FK__Очередь_с__Исход__300424B4">
+      <End Role="Исходные_данные" EntitySet="Исходные_данные" />
+      <End Role="Очередь_с_ограничением_длины" EntitySet="Очередь_с_ограничением_длины" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Очередь_с__Исход__32E0915F" Association="Self.FK__Очередь_с__Исход__32E0915F">
+      <End Role="Исходные_данные" EntitySet="Исходные_данные" />
+      <End Role="Очередь_с_неограниченным_ожиданием" EntitySet="Очередь_с_неограниченным_ожиданием" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

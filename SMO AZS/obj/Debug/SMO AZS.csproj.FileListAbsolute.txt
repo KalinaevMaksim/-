@@ -1,0 +1,320 @@
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\SMO AZS.exe.config
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\SMO AZS.exe
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\SMO AZS.pdb
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\EntityFramework.dll
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\EntityFramework.SqlServer.dll
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\EntityFramework.xml
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\EntityFramework.SqlServer.xml
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\ru\EntityFramework.resources.dll
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\App.g.cs
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS_Content.g.cs
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS_MarkupCompile.cache
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS_MarkupCompile.lref
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\App.baml
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.g.resources
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO_AZS.Properties.Resources.resources
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.GenerateResource.cache
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.CoreCompileInputs.cache
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.exe
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.pdb
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.AssemblyReference.cache
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pManualInput.g.cs
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultLimitedLength.g.cs
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultRejection.g.cs
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pStart.g.cs
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Windows\wMain.g.cs
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pManualInput.baml
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultLimitedLength.baml
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultRejection.baml
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pStart.baml
+D:\Документы\Математическое моделирование\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Windows\wMain.baml
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\SMO AZS.exe.config
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\SMO AZS.exe
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\SMO AZS.pdb
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\EntityFramework.dll
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\MaterialDesignColors.dll
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\WpfMath.dll
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\EntityFramework.xml
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\MaterialDesignColors.pdb
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pManualInput.g.cs
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultDiagram.g.cs
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultGeneral.g.cs
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultLimitedLength.g.cs
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultRejection.g.cs
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultUnlimitedWaiting.g.cs
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pStart.g.cs
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Windows\wMain.g.cs
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\App.g.cs
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS_Content.g.cs
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS_MarkupCompile.cache
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS_MarkupCompile.lref
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\App.baml
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pManualInput.baml
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultDiagram.baml
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultGeneral.baml
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultLimitedLength.baml
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultRejection.baml
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultUnlimitedWaiting.baml
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pStart.baml
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Windows\wMain.baml
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.g.resources
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO_AZS.Properties.Resources.resources
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.GenerateResource.cache
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.CopyComplete
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.exe
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.pdb
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.AssemblyReference.cache
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.AssemblyReference.cache
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pManualInput.g.cs
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultGeneral.g.cs
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultLimitedLength.g.cs
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultRejection.g.cs
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultUnlimitedWaiting.g.cs
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pStart.g.cs
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Windows\wMain.g.cs
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\App.g.cs
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS_Content.g.cs
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS_MarkupCompile.cache
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS_MarkupCompile.lref
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\SMO AZS.exe.config
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\SMO AZS.exe
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\SMO AZS.pdb
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\EntityFramework.dll
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\LiveCharts.dll
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\MaterialDesignColors.dll
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\WpfMath.dll
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\EntityFramework.xml
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\LiveCharts.pdb
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\LiveCharts.xml
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\MaterialDesignColors.pdb
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultDiagram.g.cs
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\App.baml
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pManualInput.baml
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultDiagram.baml
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultGeneral.baml
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultLimitedLength.baml
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultRejection.baml
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultUnlimitedWaiting.baml
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pStart.baml
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Windows\wMain.baml
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.g.resources
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO_AZS.Properties.Resources.resources
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.GenerateResource.cache
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.CoreCompileInputs.cache
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.CopyComplete
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.exe
+C:\Users\UserSK\Documents\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.pdb
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\LiveCharts.dll
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\LiveCharts.pdb
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\LiveCharts.xml
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\Documents\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\Newtonsoft.Json.xml
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.SuggestedBindingRedirects.cache
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pManualInput.g.cs
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultDiagram.g.cs
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultGeneral.g.cs
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResult.g.cs
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Windows\wMain.g.cs
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\App.g.cs
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS_Content.g.cs
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS_MarkupCompile.cache
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS_MarkupCompile.lref
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\SMO AZS.exe.config
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\SMO AZS.exe.manifest
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\SMO AZS.application
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\SMO AZS.exe
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\SMO AZS.pdb
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\DocumentFormat.OpenXml.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\EntityFramework.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\EntityFramework.SqlServer.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\LiveCharts.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\LiveCharts.Wpf.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\MaterialDesignColors.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\Newtonsoft.Json.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\WpfMath.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\DocumentFormat.OpenXml.xml
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\EntityFramework.xml
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\EntityFramework.SqlServer.xml
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\LiveCharts.pdb
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\LiveCharts.xml
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\LiveCharts.Wpf.pdb
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\LiveCharts.Wpf.xml
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\MaterialDesignColors.pdb
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\Newtonsoft.Json.xml
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\ru\EntityFramework.resources.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\App.baml
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pManualInput.baml
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultDiagram.baml
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultGeneral.baml
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResult.baml
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Windows\wMain.baml
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.g.resources
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO_AZS.Properties.Resources.resources
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.GenerateResource.cache
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.CoreCompileInputs.cache
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.exe.manifest
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.application
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.CopyComplete
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.exe
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.pdb
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pAbout.g.cs
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pAbout.baml
+D:\Документы\Математическое моделирование\Учебно-производственная практика\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.AssemblyReference.cache
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\SMO AZS.exe.config
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\SMO AZS.exe.manifest
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\SMO AZS.application
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\SMO AZS.exe
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\SMO AZS.pdb
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\EntityFramework.xml
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\LiveCharts.xml
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\Newtonsoft.Json.xml
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pManualInput.g.cs
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultDiagram.g.cs
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultGeneral.g.cs
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResult.g.cs
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pAbout.g.cs
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Windows\wMain.g.cs
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\App.g.cs
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS_Content.g.cs
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS_MarkupCompile.cache
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS_MarkupCompile.lref
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\App.baml
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pManualInput.baml
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultDiagram.baml
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultGeneral.baml
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResult.baml
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pAbout.baml
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Windows\wMain.baml
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.g.resources
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO_AZS.Properties.Resources.resources
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.GenerateResource.cache
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.CoreCompileInputs.cache
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.Fody.CopyLocal.cache
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.exe.manifest
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.application
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.CopyComplete
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.exe
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.pdb
+C:\Users\UserSK\Documents\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.AssemblyReference.cache
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\SMO AZS.exe.config
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\SMO AZS.exe.manifest
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\SMO AZS.application
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\SMO AZS.exe
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\SMO AZS.pdb
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\DocumentFormat.OpenXml.xml
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\EntityFramework.xml
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\EntityFramework.SqlServer.xml
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\LiveCharts.xml
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\LiveCharts.Wpf.xml
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\Newtonsoft.Json.xml
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.AssemblyReference.cache
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.SuggestedBindingRedirects.cache
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pManualInput.g.cs
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultDiagram.g.cs
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultGeneral.g.cs
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResult.g.cs
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pAbout.g.cs
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Windows\MaterialMessageBox.g.cs
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Windows\wMain.g.cs
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\App.g.cs
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS_Content.g.cs
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS_MarkupCompile.cache
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS_MarkupCompile.lref
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\App.baml
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pManualInput.baml
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultDiagram.baml
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultGeneral.baml
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResult.baml
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pAbout.baml
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Windows\MaterialMessageBox.baml
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Windows\wMain.baml
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.g.resources
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO_AZS.Properties.Resources.resources
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.GenerateResource.cache
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.CoreCompileInputs.cache
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.Fody.CopyLocal.cache
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.exe.manifest
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.application
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.CopyComplete
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.exe
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.pdb
+D:\Документы\4 курс\СМО АЗС\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\Microsoft.Xaml.Behaviors.xml
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\SMO AZS.exe.config
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\SMO AZS.exe.manifest
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\SMO AZS.application
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\SMO AZS.exe
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\SMO AZS.pdb
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\DocumentFormat.OpenXml.xml
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\EntityFramework.xml
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\EntityFramework.SqlServer.xml
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\LiveCharts.xml
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\LiveCharts.Wpf.xml
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\Microsoft.Xaml.Behaviors.xml
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\Newtonsoft.Json.xml
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.AssemblyReference.cache
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.SuggestedBindingRedirects.cache
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pManualInput.g.cs
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultDiagram.g.cs
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultGeneral.g.cs
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResult.g.cs
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pAbout.g.cs
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Windows\wMain.g.cs
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\App.g.cs
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS_Content.g.cs
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS_MarkupCompile.cache
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS_MarkupCompile.lref
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\App.baml
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pManualInput.baml
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultDiagram.baml
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResultGeneral.baml
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pOutputResult.baml
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Pages\pAbout.baml
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\Views\Windows\wMain.baml
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.g.resources
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO_AZS.Properties.Resources.resources
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.GenerateResource.cache
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.CoreCompileInputs.cache
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.Fody.CopyLocal.cache
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.exe.manifest
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.application
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.csproj.CopyComplete
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.exe
+D:\Документы\4 курс\СМО АЗС\SMO AZS\SMO AZS\obj\Debug\SMO AZS.pdb

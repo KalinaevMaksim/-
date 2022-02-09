@@ -41,7 +41,7 @@ namespace SMO_AZS.Utils
 
             Исходные_данные исходные_Данные = ImportInputData(lines);
 
-            if(!CheckInitData(исходные_Данные))
+            if (!CheckInitData(исходные_Данные))
                 FileRecognizeException();
 
             return исходные_Данные;
@@ -111,7 +111,7 @@ namespace SMO_AZS.Utils
         /// <returns>Результат проверки</returns>
         private static bool CheckInitData(Исходные_данные исходные_Данные)
         {
-            if (исходные_Данные == null || 
+            if (исходные_Данные == null ||
                 исходные_Данные.Число_каналов <= 0 ||
                 исходные_Данные.Среднее_время_обслуживания_одной_заявки_в_минутах <= 0 ||
                 исходные_Данные.Интенсивность_входного_потока__число_клиентов_ <= 0)
