@@ -1,22 +1,22 @@
-create database [ÑÌÎ ÀÇÑ]
+create database [Ğ¡ĞœĞ ĞĞ—Ğ¡]
 go
 
-use [ÑÌÎ ÀÇÑ]
+use [Ğ¡ĞœĞ ĞĞ—Ğ¡]
 go
 
-create table [İêñïåğèìåíò]
+create table [Ğ­ĞºÑĞ¿ĞµÑ€Ğ¸Ğ¼ĞµĞ½Ñ‚]
 (
 	Id int primary key identity,
-	[Äàòà ıêñïåğèìåíòà] datetime not null,
-	[Ïîñòàíîâêà çàäà÷è] nvarchar(max) not null,
+	[Ğ”Ğ°Ñ‚Ğ° ÑĞºÑĞ¿ĞµÑ€Ğ¸Ğ¼ĞµĞ½Ñ‚Ğ°] datetime not null,
+	[ĞŸĞ¾ÑÑ‚Ğ°Ğ½Ğ¾Ğ²ĞºĞ° Ğ·Ğ°Ğ´Ğ°Ñ‡Ğ¸] nvarchar(max) not null,
 )
 go
 
-create trigger [Òğèããåğİêñïåğèìåíò] on [İêñïåğèìåíò]
+create trigger [Ğ¢Ñ€Ğ¸Ğ³Ğ³ĞµÑ€Ğ­ĞºÑĞ¿ĞµÑ€Ğ¸Ğ¼ĞµĞ½Ñ‚] on [Ğ­ĞºÑĞ¿ĞµÑ€Ğ¸Ğ¼ĞµĞ½Ñ‚]
 after update, insert as
 begin
 	declare @data datetime
-	declare _cursor1 Cursor for select [Äàòà ıêñïåğèìåíòà] from inserted
+	declare _cursor1 Cursor for select [Ğ”Ğ°Ñ‚Ğ° ÑĞºÑĞ¿ĞµÑ€Ğ¸Ğ¼ĞµĞ½Ñ‚Ğ°] from inserted
 	open _cursor1
 	fetch next from _cursor1 into @data
 
@@ -25,7 +25,7 @@ begin
 		if @data > GETDATE()
 		begin
 			rollback
-			raiserror('Äàòà áîëüøå òåêóùåé', 16, 2)
+			raiserror('Ğ”Ğ°Ñ‚Ğ° Ğ±Ğ¾Ğ»ÑŒÑˆĞµ Ñ‚ĞµĞºÑƒÑ‰ĞµĞ¹', 16, 2)
 		end
 
 		fetch next from _cursor1 into @data
@@ -36,26 +36,26 @@ begin
 end;
 go
 
-create table [Èñõîäíûå äàííûå] 
+create table [Ğ˜ÑÑ…Ğ¾Ğ´Ğ½Ñ‹Ğµ Ğ´Ğ°Ğ½Ğ½Ñ‹Ğµ] 
 (
 	Id int primary key identity,
-	[İêñïåğèìåíò Id] int references [İêñïåğèìåíò](Id) not null,
-	[×èñëî êàíàëîâ] int not null,
-	[Èíòåíñèâíîñòü âõîäíîãî ïîòîêà (÷èñëî êëèåíòîâ)] float not null,
-	[Ñğåäíåå âğåìÿ îáñëóæèâàíèÿ îäíîé çàÿâêè â ìèíóòàõ] float not null,
-	[Èíòåíñèâíîñòü ïîòîêà îáñëóæèâàíèÿ] float not null,
-	[Èíòåíñèâíîñòü íàãğóçêè] float not null,
-	[Ïğîäîëæèòåëüíîñòü ğàáî÷åãî äíÿ â ÷àñàõ] int null,
-	[Òğåáóåìàÿ âåğîÿòíîñòü îáñëóæèâàíèÿ] float null,
-	[Äëèíà î÷åğåäè] int null
+	[Ğ­ĞºÑĞ¿ĞµÑ€Ğ¸Ğ¼ĞµĞ½Ñ‚ Id] int references [Ğ­ĞºÑĞ¿ĞµÑ€Ğ¸Ğ¼ĞµĞ½Ñ‚](Id) not null,
+	[Ğ§Ğ¸ÑĞ»Ğ¾ ĞºĞ°Ğ½Ğ°Ğ»Ğ¾Ğ²] int not null,
+	[Ğ˜Ğ½Ñ‚ĞµĞ½ÑĞ¸Ğ²Ğ½Ğ¾ÑÑ‚ÑŒ Ğ²Ñ…Ğ¾Ğ´Ğ½Ğ¾Ğ³Ğ¾ Ğ¿Ğ¾Ñ‚Ğ¾ĞºĞ° (Ñ‡Ğ¸ÑĞ»Ğ¾ ĞºĞ»Ğ¸ĞµĞ½Ñ‚Ğ¾Ğ²)] float not null,
+	[Ğ¡Ñ€ĞµĞ´Ğ½ĞµĞµ Ğ²Ñ€ĞµĞ¼Ñ Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸Ñ Ğ¾Ğ´Ğ½Ğ¾Ğ¹ Ğ·Ğ°ÑĞ²ĞºĞ¸ Ğ² Ğ¼Ğ¸Ğ½ÑƒÑ‚Ğ°Ñ…] float not null,
+	[Ğ˜Ğ½Ñ‚ĞµĞ½ÑĞ¸Ğ²Ğ½Ğ¾ÑÑ‚ÑŒ Ğ¿Ğ¾Ñ‚Ğ¾ĞºĞ° Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸Ñ] float not null,
+	[Ğ˜Ğ½Ñ‚ĞµĞ½ÑĞ¸Ğ²Ğ½Ğ¾ÑÑ‚ÑŒ Ğ½Ğ°Ğ³Ñ€ÑƒĞ·ĞºĞ¸] float not null,
+	[ĞŸÑ€Ğ¾Ğ´Ğ¾Ğ»Ğ¶Ğ¸Ñ‚ĞµĞ»ÑŒĞ½Ğ¾ÑÑ‚ÑŒ Ñ€Ğ°Ğ±Ğ¾Ñ‡ĞµĞ³Ğ¾ Ğ´Ğ½Ñ Ğ² Ñ‡Ğ°ÑĞ°Ñ…] int null,
+	[Ğ¢Ñ€ĞµĞ±ÑƒĞµĞ¼Ğ°Ñ Ğ²ĞµÑ€Ğ¾ÑÑ‚Ğ½Ğ¾ÑÑ‚ÑŒ Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸Ñ] float null,
+	[Ğ”Ğ»Ğ¸Ğ½Ğ° Ğ¾Ñ‡ĞµÑ€ĞµĞ´Ğ¸] int null
 )
 go
 
-create trigger [ÒğèããåğÈñõîäíûåÄàííûå] on [Èñõîäíûå äàííûå]
+create trigger [Ğ¢Ñ€Ğ¸Ğ³Ğ³ĞµÑ€Ğ˜ÑÑ…Ğ¾Ğ´Ğ½Ñ‹ĞµĞ”Ğ°Ğ½Ğ½Ñ‹Ğµ] on [Ğ˜ÑÑ…Ğ¾Ğ´Ğ½Ñ‹Ğµ Ğ´Ğ°Ğ½Ğ½Ñ‹Ğµ]
 after update, insert as
 begin
 	declare @data int
-	declare _cursor2 Cursor for select [Ïğîäîëæèòåëüíîñòü ğàáî÷åãî äíÿ â ÷àñàõ] from inserted
+	declare _cursor2 Cursor for select [ĞŸÑ€Ğ¾Ğ´Ğ¾Ğ»Ğ¶Ğ¸Ñ‚ĞµĞ»ÑŒĞ½Ğ¾ÑÑ‚ÑŒ Ñ€Ğ°Ğ±Ğ¾Ñ‡ĞµĞ³Ğ¾ Ğ´Ğ½Ñ Ğ² Ñ‡Ğ°ÑĞ°Ñ…] from inserted
 	open _cursor2
 	fetch next from _cursor2 into @data
 
@@ -64,7 +64,7 @@ begin
 		if @data > 24 or @data <= 0
 		begin
 			rollback
-			raiserror('Ïğîäîëæèòåëüíîñòü ğàáî÷åãî äíÿ íå ìîæåò áûòü ìåíüøå 0 èëè áîëüøå 24', 16, 2)
+			raiserror('ĞŸÑ€Ğ¾Ğ´Ğ¾Ğ»Ğ¶Ğ¸Ñ‚ĞµĞ»ÑŒĞ½Ğ¾ÑÑ‚ÑŒ Ñ€Ğ°Ğ±Ğ¾Ñ‡ĞµĞ³Ğ¾ Ğ´Ğ½Ñ Ğ½Ğµ Ğ¼Ğ¾Ğ¶ĞµÑ‚ Ğ±Ñ‹Ñ‚ÑŒ Ğ¼ĞµĞ½ÑŒÑˆĞµ 0 Ğ¸Ğ»Ğ¸ Ğ±Ğ¾Ğ»ÑŒÑˆĞµ 24', 16, 2)
 		end
 
 		fetch next from _cursor2 into @data
@@ -76,161 +76,161 @@ end;
 go
 
 
-create table [Î÷åğåäü ñ îòêàçîì] 
+create table [ĞÑ‡ĞµÑ€ĞµĞ´ÑŒ Ñ Ğ¾Ñ‚ĞºĞ°Ğ·Ğ¾Ğ¼] 
 (
 	Id int primary key identity,
-	[Èñõîäíûå äàííûå Id] int references [Èñõîäíûå äàííûå](Id) not null,
-	[Âåğîÿòíîñòü ïğîñòîÿ êàíàëîâ îáñëóæèâàíèÿ, êîãäà íåò çàÿâîê] float not null,
-	[Âåğîÿòíîñòü îòêàçà â îáñëóæèâàíèè, êîãäà ïîñòóïèâøàÿ íà îáñëóæèâàíèå çàÿâêà íàéäåò âñå êàíàëû çàíÿòûìè] float not null,
-	[Âåğîÿòíîñòü îáñëóæèâàíèÿ] float not null,
-	[Ñğåäíåå ÷èñëî çàíÿòûõ îáñëóæèâàíèåì êàíàëîâ] float not null,
-	[Äîëÿ êàíàëîâ, çàíÿòûõ îáñëóæèâàíèåì] float not null,
-	[Àáñîëşòíàÿ ïğîïóñêíàÿ ñïîñîáíîñòü ÑÌÎ] float not null
+	[Ğ˜ÑÑ…Ğ¾Ğ´Ğ½Ñ‹Ğµ Ğ´Ğ°Ğ½Ğ½Ñ‹Ğµ Id] int references [Ğ˜ÑÑ…Ğ¾Ğ´Ğ½Ñ‹Ğµ Ğ´Ğ°Ğ½Ğ½Ñ‹Ğµ](Id) not null,
+	[Ğ’ĞµÑ€Ğ¾ÑÑ‚Ğ½Ğ¾ÑÑ‚ÑŒ Ğ¿Ñ€Ğ¾ÑÑ‚Ğ¾Ñ ĞºĞ°Ğ½Ğ°Ğ»Ğ¾Ğ² Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸Ñ, ĞºĞ¾Ğ³Ğ´Ğ° Ğ½ĞµÑ‚ Ğ·Ğ°ÑĞ²Ğ¾Ğº] float not null,
+	[Ğ’ĞµÑ€Ğ¾ÑÑ‚Ğ½Ğ¾ÑÑ‚ÑŒ Ğ¾Ñ‚ĞºĞ°Ğ·Ğ° Ğ² Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸Ğ¸, ĞºĞ¾Ğ³Ğ´Ğ° Ğ¿Ğ¾ÑÑ‚ÑƒĞ¿Ğ¸Ğ²ÑˆĞ°Ñ Ğ½Ğ° Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸Ğµ Ğ·Ğ°ÑĞ²ĞºĞ° Ğ½Ğ°Ğ¹Ğ´ĞµÑ‚ Ğ²ÑĞµ ĞºĞ°Ğ½Ğ°Ğ»Ñ‹ Ğ·Ğ°Ğ½ÑÑ‚Ñ‹Ğ¼Ğ¸] float not null,
+	[Ğ’ĞµÑ€Ğ¾ÑÑ‚Ğ½Ğ¾ÑÑ‚ÑŒ Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸Ñ] float not null,
+	[Ğ¡Ñ€ĞµĞ´Ğ½ĞµĞµ Ñ‡Ğ¸ÑĞ»Ğ¾ Ğ·Ğ°Ğ½ÑÑ‚Ñ‹Ñ… Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸ĞµĞ¼ ĞºĞ°Ğ½Ğ°Ğ»Ğ¾Ğ²] float not null,
+	[Ğ”Ğ¾Ğ»Ñ ĞºĞ°Ğ½Ğ°Ğ»Ğ¾Ğ², Ğ·Ğ°Ğ½ÑÑ‚Ñ‹Ñ… Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸ĞµĞ¼] float not null,
+	[ĞĞ±ÑĞ¾Ğ»ÑÑ‚Ğ½Ğ°Ñ Ğ¿Ñ€Ğ¾Ğ¿ÑƒÑĞºĞ½Ğ°Ñ ÑĞ¿Ğ¾ÑĞ¾Ğ±Ğ½Ğ¾ÑÑ‚ÑŒ Ğ¡ĞœĞ] float not null
 );
 
-create table [Î÷åğåäü ñ îãğàíè÷åíèåì äëèíû] 
+create table [ĞÑ‡ĞµÑ€ĞµĞ´ÑŒ Ñ Ğ¾Ğ³Ñ€Ğ°Ğ½Ğ¸Ñ‡ĞµĞ½Ğ¸ĞµĞ¼ Ğ´Ğ»Ğ¸Ğ½Ñ‹] 
 (
 	Id int primary key identity,
-	[Èñõîäíûå äàííûå Id] int references [Èñõîäíûå äàííûå](Id) not null,
-	[Âåğîÿòíîñòü ïğîñòîÿ êàíàëîâ îáñëóæèâàíèÿ, êîãäà íåò çàÿâîê] float not null,
-	[Âåğîÿòíîñòü îòêàçà â îáñëóæèâàíèè] float not null,
-	[Âåğîÿòíîñòü îáñëóæèâàíèÿ] float not null,
-	[Àáñîëşòíàÿ ïğîïóñêíàÿ ñïîñîáíîñòü] float not null,
-	[Ñğåäíåå ÷èñëî çàíÿòûõ êàíàëîâ] float not null,
-	[Ñğåäíåå ÷èñëî çàÿâîê â î÷åğåäè] float not null,
-	[Ñğåäíåå âğåìÿ îæèäàíèÿ îáñëóæèâàíèÿ â ìèíóòàõ] float not null,
-	[Ñğåäíåå ÷èñëî çàÿâîê â ñèñòåìå] float not null,
-	[Ñğåäíåå âğåìÿ ïğåáûâàíèÿ â ñèñòåìå â ìèíóòàõ] float not null
+	[Ğ˜ÑÑ…Ğ¾Ğ´Ğ½Ñ‹Ğµ Ğ´Ğ°Ğ½Ğ½Ñ‹Ğµ Id] int references [Ğ˜ÑÑ…Ğ¾Ğ´Ğ½Ñ‹Ğµ Ğ´Ğ°Ğ½Ğ½Ñ‹Ğµ](Id) not null,
+	[Ğ’ĞµÑ€Ğ¾ÑÑ‚Ğ½Ğ¾ÑÑ‚ÑŒ Ğ¿Ñ€Ğ¾ÑÑ‚Ğ¾Ñ ĞºĞ°Ğ½Ğ°Ğ»Ğ¾Ğ² Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸Ñ, ĞºĞ¾Ğ³Ğ´Ğ° Ğ½ĞµÑ‚ Ğ·Ğ°ÑĞ²Ğ¾Ğº] float not null,
+	[Ğ’ĞµÑ€Ğ¾ÑÑ‚Ğ½Ğ¾ÑÑ‚ÑŒ Ğ¾Ñ‚ĞºĞ°Ğ·Ğ° Ğ² Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸Ğ¸] float not null,
+	[Ğ’ĞµÑ€Ğ¾ÑÑ‚Ğ½Ğ¾ÑÑ‚ÑŒ Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸Ñ] float not null,
+	[ĞĞ±ÑĞ¾Ğ»ÑÑ‚Ğ½Ğ°Ñ Ğ¿Ñ€Ğ¾Ğ¿ÑƒÑĞºĞ½Ğ°Ñ ÑĞ¿Ğ¾ÑĞ¾Ğ±Ğ½Ğ¾ÑÑ‚ÑŒ] float not null,
+	[Ğ¡Ñ€ĞµĞ´Ğ½ĞµĞµ Ñ‡Ğ¸ÑĞ»Ğ¾ Ğ·Ğ°Ğ½ÑÑ‚Ñ‹Ñ… ĞºĞ°Ğ½Ğ°Ğ»Ğ¾Ğ²] float not null,
+	[Ğ¡Ñ€ĞµĞ´Ğ½ĞµĞµ Ñ‡Ğ¸ÑĞ»Ğ¾ Ğ·Ğ°ÑĞ²Ğ¾Ğº Ğ² Ğ¾Ñ‡ĞµÑ€ĞµĞ´Ğ¸] float not null,
+	[Ğ¡Ñ€ĞµĞ´Ğ½ĞµĞµ Ğ²Ñ€ĞµĞ¼Ñ Ğ¾Ğ¶Ğ¸Ğ´Ğ°Ğ½Ğ¸Ñ Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸Ñ Ğ² Ğ¼Ğ¸Ğ½ÑƒÑ‚Ğ°Ñ…] float not null,
+	[Ğ¡Ñ€ĞµĞ´Ğ½ĞµĞµ Ñ‡Ğ¸ÑĞ»Ğ¾ Ğ·Ğ°ÑĞ²Ğ¾Ğº Ğ² ÑĞ¸ÑÑ‚ĞµĞ¼Ğµ] float not null,
+	[Ğ¡Ñ€ĞµĞ´Ğ½ĞµĞµ Ğ²Ñ€ĞµĞ¼Ñ Ğ¿Ñ€ĞµĞ±Ñ‹Ğ²Ğ°Ğ½Ğ¸Ñ Ğ² ÑĞ¸ÑÑ‚ĞµĞ¼Ğµ Ğ² Ğ¼Ğ¸Ğ½ÑƒÑ‚Ğ°Ñ…] float not null
 
 );
 
-create table [Î÷åğåäü ñ íåîãğàíè÷åííûì îæèäàíèåì] 
+create table [ĞÑ‡ĞµÑ€ĞµĞ´ÑŒ Ñ Ğ½ĞµĞ¾Ğ³Ñ€Ğ°Ğ½Ğ¸Ñ‡ĞµĞ½Ğ½Ñ‹Ğ¼ Ğ¾Ğ¶Ğ¸Ğ´Ğ°Ğ½Ğ¸ĞµĞ¼] 
 (
 	Id int primary key identity,
-	[Èñõîäíûå äàííûå Id] int references [Èñõîäíûå äàííûå](Id) not null,
-	[Âåğîÿòíîñòü ïğîñòîÿ êàíàëîâ îáñëóæèâàíèÿ, êîãäà íåò çàÿâîê] float not null,
-	[Âåğîÿòíîñòü çàíÿòîñòè îáñëóæèâàíèåì âñåõ êàíàëîâ] float not null,
-	[Âåğîÿòíîñòü òîãî, ÷òî çàÿâêà îêàæåòñÿ â î÷åğåäè] float not null,
-	[Ñğåäíåå ÷èñëî çàÿâîê â î÷åğåäè] float not null,
-	[Ñğåäíåå âğåìÿ îæèäàíèÿ çàÿâêè â î÷åğåäè â ìèíóòàõ] float not null,
-	[Ñğåäíåå âğåìÿ ïğåáûâàíèÿ çàÿâêè â ÑÌÎ â ìèíóòàõ] float not null,
-	[Ñğåäíåå ÷èñëî çàíÿòûõ îáñëóæèâàíèåì êàíàëîâ] float not null,
-	[Ñğåäíåå ÷èñëî ñâîáîäíûõ êàíàëîâ] float not null,
-	[Êîıôôèöèåíò çàíÿòîñòè êàíàëîâ îáñëóæèâàíèÿ] float not null,
-	[Ñğåäíåå ÷èñëî çàÿâîê â ÑÌÎ] float not null
+	[Ğ˜ÑÑ…Ğ¾Ğ´Ğ½Ñ‹Ğµ Ğ´Ğ°Ğ½Ğ½Ñ‹Ğµ Id] int references [Ğ˜ÑÑ…Ğ¾Ğ´Ğ½Ñ‹Ğµ Ğ´Ğ°Ğ½Ğ½Ñ‹Ğµ](Id) not null,
+	[Ğ’ĞµÑ€Ğ¾ÑÑ‚Ğ½Ğ¾ÑÑ‚ÑŒ Ğ¿Ñ€Ğ¾ÑÑ‚Ğ¾Ñ ĞºĞ°Ğ½Ğ°Ğ»Ğ¾Ğ² Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸Ñ, ĞºĞ¾Ğ³Ğ´Ğ° Ğ½ĞµÑ‚ Ğ·Ğ°ÑĞ²Ğ¾Ğº] float not null,
+	[Ğ’ĞµÑ€Ğ¾ÑÑ‚Ğ½Ğ¾ÑÑ‚ÑŒ Ğ·Ğ°Ğ½ÑÑ‚Ğ¾ÑÑ‚Ğ¸ Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸ĞµĞ¼ Ğ²ÑĞµÑ… ĞºĞ°Ğ½Ğ°Ğ»Ğ¾Ğ²] float not null,
+	[Ğ’ĞµÑ€Ğ¾ÑÑ‚Ğ½Ğ¾ÑÑ‚ÑŒ Ñ‚Ğ¾Ğ³Ğ¾, Ñ‡Ñ‚Ğ¾ Ğ·Ğ°ÑĞ²ĞºĞ° Ğ¾ĞºĞ°Ğ¶ĞµÑ‚ÑÑ Ğ² Ğ¾Ñ‡ĞµÑ€ĞµĞ´Ğ¸] float not null,
+	[Ğ¡Ñ€ĞµĞ´Ğ½ĞµĞµ Ñ‡Ğ¸ÑĞ»Ğ¾ Ğ·Ğ°ÑĞ²Ğ¾Ğº Ğ² Ğ¾Ñ‡ĞµÑ€ĞµĞ´Ğ¸] float not null,
+	[Ğ¡Ñ€ĞµĞ´Ğ½ĞµĞµ Ğ²Ñ€ĞµĞ¼Ñ Ğ¾Ğ¶Ğ¸Ğ´Ğ°Ğ½Ğ¸Ñ Ğ·Ğ°ÑĞ²ĞºĞ¸ Ğ² Ğ¾Ñ‡ĞµÑ€ĞµĞ´Ğ¸ Ğ² Ğ¼Ğ¸Ğ½ÑƒÑ‚Ğ°Ñ…] float not null,
+	[Ğ¡Ñ€ĞµĞ´Ğ½ĞµĞµ Ğ²Ñ€ĞµĞ¼Ñ Ğ¿Ñ€ĞµĞ±Ñ‹Ğ²Ğ°Ğ½Ğ¸Ñ Ğ·Ğ°ÑĞ²ĞºĞ¸ Ğ² Ğ¡ĞœĞ Ğ² Ğ¼Ğ¸Ğ½ÑƒÑ‚Ğ°Ñ…] float not null,
+	[Ğ¡Ñ€ĞµĞ´Ğ½ĞµĞµ Ñ‡Ğ¸ÑĞ»Ğ¾ Ğ·Ğ°Ğ½ÑÑ‚Ñ‹Ñ… Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸ĞµĞ¼ ĞºĞ°Ğ½Ğ°Ğ»Ğ¾Ğ²] float not null,
+	[Ğ¡Ñ€ĞµĞ´Ğ½ĞµĞµ Ñ‡Ğ¸ÑĞ»Ğ¾ ÑĞ²Ğ¾Ğ±Ğ¾Ğ´Ğ½Ñ‹Ñ… ĞºĞ°Ğ½Ğ°Ğ»Ğ¾Ğ²] float not null,
+	[ĞšĞ¾ÑÑ„Ñ„Ğ¸Ñ†Ğ¸ĞµĞ½Ñ‚ Ğ·Ğ°Ğ½ÑÑ‚Ğ¾ÑÑ‚Ğ¸ ĞºĞ°Ğ½Ğ°Ğ»Ğ¾Ğ² Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸Ñ] float not null,
+	[Ğ¡Ñ€ĞµĞ´Ğ½ĞµĞµ Ñ‡Ğ¸ÑĞ»Ğ¾ Ğ·Ğ°ÑĞ²Ğ¾Ğº Ğ² Ğ¡ĞœĞ] float not null
 );
 go
 
-create procedure [Äîáàâëåíèåİêñïåğèìåíò] @date datetime, @problemStatement nvarchar(max) as
+create procedure [Ğ”Ğ¾Ğ±Ğ°Ğ²Ğ»ĞµĞ½Ğ¸ĞµĞ­ĞºÑĞ¿ĞµÑ€Ğ¸Ğ¼ĞµĞ½Ñ‚] @date datetime, @problemStatement nvarchar(max) as
 begin
-	insert into [İêñïåğèìåíò] values
+	insert into [Ğ­ĞºÑĞ¿ĞµÑ€Ğ¸Ğ¼ĞµĞ½Ñ‚] values
 	(@date, @problemStatement)
 end;
 go
 
-create procedure [Èçìåíåíèåİêñïåğèìåíò] @id int, @date datetime, @problemStatement nvarchar(max) as
+create procedure [Ğ˜Ğ·Ğ¼ĞµĞ½ĞµĞ½Ğ¸ĞµĞ­ĞºÑĞ¿ĞµÑ€Ğ¸Ğ¼ĞµĞ½Ñ‚] @id int, @date datetime, @problemStatement nvarchar(max) as
 begin
-	update [İêñïåğèìåíò]
+	update [Ğ­ĞºÑĞ¿ĞµÑ€Ğ¸Ğ¼ĞµĞ½Ñ‚]
 	set 
-	[Äàòà ıêñïåğèìåíòà] = @date,
-	[Ïîñòàíîâêà çàäà÷è] = @problemStatement
+	[Ğ”Ğ°Ñ‚Ğ° ÑĞºÑĞ¿ĞµÑ€Ğ¸Ğ¼ĞµĞ½Ñ‚Ğ°] = @date,
+	[ĞŸĞ¾ÑÑ‚Ğ°Ğ½Ğ¾Ğ²ĞºĞ° Ğ·Ğ°Ğ´Ğ°Ñ‡Ğ¸] = @problemStatement
 	where Id = @id
 end;
 go
 
-create procedure [ÄîáàâëåíèåÈñõîäíûåÄàííûå] @expId int, @countChannels int, @inputStream float, @avgTimeService float, @intenseStreaService float = 0, @intenseLoad float = 0, @workingDay int = null, @requiredService float = null, @lengthQueue int = null as
+create procedure [Ğ”Ğ¾Ğ±Ğ°Ğ²Ğ»ĞµĞ½Ğ¸ĞµĞ˜ÑÑ…Ğ¾Ğ´Ğ½Ñ‹ĞµĞ”Ğ°Ğ½Ğ½Ñ‹Ğµ] @expId int, @countChannels int, @inputStream float, @avgTimeService float, @intenseStreaService float = 0, @intenseLoad float = 0, @workingDay int = null, @requiredService float = null, @lengthQueue int = null as
 begin
-	insert into [Èñõîäíûå äàííûå] values
+	insert into [Ğ˜ÑÑ…Ğ¾Ğ´Ğ½Ñ‹Ğµ Ğ´Ğ°Ğ½Ğ½Ñ‹Ğµ] values
 	(@expId, @countChannels, @inputStream, @avgTimeService, @intenseStreaService, @intenseLoad, @workingDay, @requiredService, @lengthQueue)
 end;
 go
 
-create procedure [ÈçìåíåíèåÈñõîäíûåÄàííûå] @id int, @expId int, @countChannels int, @inputStream float, @avgTimeService float, @intenseStreaService float = 0, @intenseLoad float = 0, @workingDay int = null, @requiredService float = null, @lengthQueue int = null as
+create procedure [Ğ˜Ğ·Ğ¼ĞµĞ½ĞµĞ½Ğ¸ĞµĞ˜ÑÑ…Ğ¾Ğ´Ğ½Ñ‹ĞµĞ”Ğ°Ğ½Ğ½Ñ‹Ğµ] @id int, @expId int, @countChannels int, @inputStream float, @avgTimeService float, @intenseStreaService float = 0, @intenseLoad float = 0, @workingDay int = null, @requiredService float = null, @lengthQueue int = null as
 begin
-	update [Èñõîäíûå äàííûå]
+	update [Ğ˜ÑÑ…Ğ¾Ğ´Ğ½Ñ‹Ğµ Ğ´Ğ°Ğ½Ğ½Ñ‹Ğµ]
 	set 
-	[İêñïåğèìåíò Id] = @expId,
-	[×èñëî êàíàëîâ] = @countChannels,
-	[Èíòåíñèâíîñòü âõîäíîãî ïîòîêà (÷èñëî êëèåíòîâ)] = @inputStream,
-	[Ñğåäíåå âğåìÿ îáñëóæèâàíèÿ îäíîé çàÿâêè â ìèíóòàõ] = @avgTimeService,
-	[Èíòåíñèâíîñòü ïîòîêà îáñëóæèâàíèÿ] = @intenseStreaService,
-	[Èíòåíñèâíîñòü íàãğóçêè] = @intenseLoad,
-	[Ïğîäîëæèòåëüíîñòü ğàáî÷åãî äíÿ â ÷àñàõ] = @workingDay,
-	[Òğåáóåìàÿ âåğîÿòíîñòü îáñëóæèâàíèÿ] = @requiredService,
-	[Äëèíà î÷åğåäè] = @lengthQueue
+	[Ğ­ĞºÑĞ¿ĞµÑ€Ğ¸Ğ¼ĞµĞ½Ñ‚ Id] = @expId,
+	[Ğ§Ğ¸ÑĞ»Ğ¾ ĞºĞ°Ğ½Ğ°Ğ»Ğ¾Ğ²] = @countChannels,
+	[Ğ˜Ğ½Ñ‚ĞµĞ½ÑĞ¸Ğ²Ğ½Ğ¾ÑÑ‚ÑŒ Ğ²Ñ…Ğ¾Ğ´Ğ½Ğ¾Ğ³Ğ¾ Ğ¿Ğ¾Ñ‚Ğ¾ĞºĞ° (Ñ‡Ğ¸ÑĞ»Ğ¾ ĞºĞ»Ğ¸ĞµĞ½Ñ‚Ğ¾Ğ²)] = @inputStream,
+	[Ğ¡Ñ€ĞµĞ´Ğ½ĞµĞµ Ğ²Ñ€ĞµĞ¼Ñ Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸Ñ Ğ¾Ğ´Ğ½Ğ¾Ğ¹ Ğ·Ğ°ÑĞ²ĞºĞ¸ Ğ² Ğ¼Ğ¸Ğ½ÑƒÑ‚Ğ°Ñ…] = @avgTimeService,
+	[Ğ˜Ğ½Ñ‚ĞµĞ½ÑĞ¸Ğ²Ğ½Ğ¾ÑÑ‚ÑŒ Ğ¿Ğ¾Ñ‚Ğ¾ĞºĞ° Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸Ñ] = @intenseStreaService,
+	[Ğ˜Ğ½Ñ‚ĞµĞ½ÑĞ¸Ğ²Ğ½Ğ¾ÑÑ‚ÑŒ Ğ½Ğ°Ğ³Ñ€ÑƒĞ·ĞºĞ¸] = @intenseLoad,
+	[ĞŸÑ€Ğ¾Ğ´Ğ¾Ğ»Ğ¶Ğ¸Ñ‚ĞµĞ»ÑŒĞ½Ğ¾ÑÑ‚ÑŒ Ñ€Ğ°Ğ±Ğ¾Ñ‡ĞµĞ³Ğ¾ Ğ´Ğ½Ñ Ğ² Ñ‡Ğ°ÑĞ°Ñ…] = @workingDay,
+	[Ğ¢Ñ€ĞµĞ±ÑƒĞµĞ¼Ğ°Ñ Ğ²ĞµÑ€Ğ¾ÑÑ‚Ğ½Ğ¾ÑÑ‚ÑŒ Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸Ñ] = @requiredService,
+	[Ğ”Ğ»Ğ¸Ğ½Ğ° Ğ¾Ñ‡ĞµÑ€ĞµĞ´Ğ¸] = @lengthQueue
 	where Id = @id
 end;
 go
 
-create procedure [ÄîáàâëåíèåÎ÷åğåäüÑÎòêàçîì] @initDataId int, @probabilityDowntime float, @probabilityRejection float, @probabilityService float, @avgCountBusy float, @percentageChannels float, @absProb float as
+create procedure [Ğ”Ğ¾Ğ±Ğ°Ğ²Ğ»ĞµĞ½Ğ¸ĞµĞÑ‡ĞµÑ€ĞµĞ´ÑŒĞ¡ĞÑ‚ĞºĞ°Ğ·Ğ¾Ğ¼] @initDataId int, @probabilityDowntime float, @probabilityRejection float, @probabilityService float, @avgCountBusy float, @percentageChannels float, @absProb float as
 begin
-	insert into [Î÷åğåäü ñ îòêàçîì] values
+	insert into [ĞÑ‡ĞµÑ€ĞµĞ´ÑŒ Ñ Ğ¾Ñ‚ĞºĞ°Ğ·Ğ¾Ğ¼] values
 	(@initDataId, @probabilityDowntime, @probabilityRejection, @probabilityService, @avgCountBusy, @percentageChannels, @absProb)
 end;
 go
 
 
-create procedure [ÈçìåíåíèåÎ÷åğåäüÑÎòêàçîì] @id int, @initDataId int, @probabilityDowntime float, @probabilityRejection float, @probabilityService float, @avgCountBusy float, @percentageChannels float, @absProb float as
+create procedure [Ğ˜Ğ·Ğ¼ĞµĞ½ĞµĞ½Ğ¸ĞµĞÑ‡ĞµÑ€ĞµĞ´ÑŒĞ¡ĞÑ‚ĞºĞ°Ğ·Ğ¾Ğ¼] @id int, @initDataId int, @probabilityDowntime float, @probabilityRejection float, @probabilityService float, @avgCountBusy float, @percentageChannels float, @absProb float as
 begin
-	update [Î÷åğåäü ñ îòêàçîì]
+	update [ĞÑ‡ĞµÑ€ĞµĞ´ÑŒ Ñ Ğ¾Ñ‚ĞºĞ°Ğ·Ğ¾Ğ¼]
 	set 
-	[Èñõîäíûå äàííûå Id] = @initDataId,
-	[Âåğîÿòíîñòü ïğîñòîÿ êàíàëîâ îáñëóæèâàíèÿ, êîãäà íåò çàÿâîê] = @probabilityDowntime,
-	[Âåğîÿòíîñòü îòêàçà â îáñëóæèâàíèè, êîãäà ïîñòóïèâøàÿ íà îáñëóæèâàíèå çàÿâêà íàéäåò âñå êàíàëû çàíÿòûìè] = @probabilityRejection,
-	[Âåğîÿòíîñòü îáñëóæèâàíèÿ] = @probabilityService,
-	[Ñğåäíåå ÷èñëî çàíÿòûõ îáñëóæèâàíèåì êàíàëîâ] = @avgCountBusy,
-	[Äîëÿ êàíàëîâ, çàíÿòûõ îáñëóæèâàíèåì] = @percentageChannels,
-	[Àáñîëşòíàÿ ïğîïóñêíàÿ ñïîñîáíîñòü ÑÌÎ] = @absProb
+	[Ğ˜ÑÑ…Ğ¾Ğ´Ğ½Ñ‹Ğµ Ğ´Ğ°Ğ½Ğ½Ñ‹Ğµ Id] = @initDataId,
+	[Ğ’ĞµÑ€Ğ¾ÑÑ‚Ğ½Ğ¾ÑÑ‚ÑŒ Ğ¿Ñ€Ğ¾ÑÑ‚Ğ¾Ñ ĞºĞ°Ğ½Ğ°Ğ»Ğ¾Ğ² Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸Ñ, ĞºĞ¾Ğ³Ğ´Ğ° Ğ½ĞµÑ‚ Ğ·Ğ°ÑĞ²Ğ¾Ğº] = @probabilityDowntime,
+	[Ğ’ĞµÑ€Ğ¾ÑÑ‚Ğ½Ğ¾ÑÑ‚ÑŒ Ğ¾Ñ‚ĞºĞ°Ğ·Ğ° Ğ² Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸Ğ¸, ĞºĞ¾Ğ³Ğ´Ğ° Ğ¿Ğ¾ÑÑ‚ÑƒĞ¿Ğ¸Ğ²ÑˆĞ°Ñ Ğ½Ğ° Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸Ğµ Ğ·Ğ°ÑĞ²ĞºĞ° Ğ½Ğ°Ğ¹Ğ´ĞµÑ‚ Ğ²ÑĞµ ĞºĞ°Ğ½Ğ°Ğ»Ñ‹ Ğ·Ğ°Ğ½ÑÑ‚Ñ‹Ğ¼Ğ¸] = @probabilityRejection,
+	[Ğ’ĞµÑ€Ğ¾ÑÑ‚Ğ½Ğ¾ÑÑ‚ÑŒ Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸Ñ] = @probabilityService,
+	[Ğ¡Ñ€ĞµĞ´Ğ½ĞµĞµ Ñ‡Ğ¸ÑĞ»Ğ¾ Ğ·Ğ°Ğ½ÑÑ‚Ñ‹Ñ… Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸ĞµĞ¼ ĞºĞ°Ğ½Ğ°Ğ»Ğ¾Ğ²] = @avgCountBusy,
+	[Ğ”Ğ¾Ğ»Ñ ĞºĞ°Ğ½Ğ°Ğ»Ğ¾Ğ², Ğ·Ğ°Ğ½ÑÑ‚Ñ‹Ñ… Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸ĞµĞ¼] = @percentageChannels,
+	[ĞĞ±ÑĞ¾Ğ»ÑÑ‚Ğ½Ğ°Ñ Ğ¿Ñ€Ğ¾Ğ¿ÑƒÑĞºĞ½Ğ°Ñ ÑĞ¿Ğ¾ÑĞ¾Ğ±Ğ½Ğ¾ÑÑ‚ÑŒ Ğ¡ĞœĞ] = @absProb
 	where Id = @id
 end;
 go
 
-create procedure [ÄîáàâëåíèåÎ÷åğåäüÑÎãğàíè÷åíèåìÄëèíû] @initDataId int, @probabilityDowntime float, @probabilityRejection float, @probabilityService float, @absProb float, @avgCountBusy float, @avgCountRequest float, @avgTimeOjid float, @avgCountRequestSys float, @avgTimeSys float as
+create procedure [Ğ”Ğ¾Ğ±Ğ°Ğ²Ğ»ĞµĞ½Ğ¸ĞµĞÑ‡ĞµÑ€ĞµĞ´ÑŒĞ¡ĞĞ³Ñ€Ğ°Ğ½Ğ¸Ñ‡ĞµĞ½Ğ¸ĞµĞ¼Ğ”Ğ»Ğ¸Ğ½Ñ‹] @initDataId int, @probabilityDowntime float, @probabilityRejection float, @probabilityService float, @absProb float, @avgCountBusy float, @avgCountRequest float, @avgTimeOjid float, @avgCountRequestSys float, @avgTimeSys float as
 begin
-	insert into [Î÷åğåäü ñ îãğàíè÷åíèåì äëèíû] values
+	insert into [ĞÑ‡ĞµÑ€ĞµĞ´ÑŒ Ñ Ğ¾Ğ³Ñ€Ğ°Ğ½Ğ¸Ñ‡ĞµĞ½Ğ¸ĞµĞ¼ Ğ´Ğ»Ğ¸Ğ½Ñ‹] values
 	(@initDataId, @probabilityDowntime, @probabilityRejection, @probabilityService, @absProb, @avgCountBusy, @avgCountRequest, @avgTimeOjid, @avgCountRequestSys, @avgTimeSys)
 end;
 go
 
-create procedure [ÈçìåíåíèåÎ÷åğåäüÑÎãğàíè÷åíèåìÄëèíû] @id int, @initDataId int, @probabilityDowntime float, @probabilityRejection float, @probabilityService float, @absProb float, @avgCountBusy float, @avgCountRequest float, @avgTimeOjid float, @avgCountRequestSys float, @avgTimeSys float as
+create procedure [Ğ˜Ğ·Ğ¼ĞµĞ½ĞµĞ½Ğ¸ĞµĞÑ‡ĞµÑ€ĞµĞ´ÑŒĞ¡ĞĞ³Ñ€Ğ°Ğ½Ğ¸Ñ‡ĞµĞ½Ğ¸ĞµĞ¼Ğ”Ğ»Ğ¸Ğ½Ñ‹] @id int, @initDataId int, @probabilityDowntime float, @probabilityRejection float, @probabilityService float, @absProb float, @avgCountBusy float, @avgCountRequest float, @avgTimeOjid float, @avgCountRequestSys float, @avgTimeSys float as
 begin
-	update [Î÷åğåäü ñ îãğàíè÷åíèåì äëèíû]
+	update [ĞÑ‡ĞµÑ€ĞµĞ´ÑŒ Ñ Ğ¾Ğ³Ñ€Ğ°Ğ½Ğ¸Ñ‡ĞµĞ½Ğ¸ĞµĞ¼ Ğ´Ğ»Ğ¸Ğ½Ñ‹]
 	set 
-	[Èñõîäíûå äàííûå Id] = @initDataId,
-	[Âåğîÿòíîñòü ïğîñòîÿ êàíàëîâ îáñëóæèâàíèÿ, êîãäà íåò çàÿâîê] = @probabilityDowntime,
-	[Âåğîÿòíîñòü îòêàçà â îáñëóæèâàíèè] = @probabilityRejection,
-	[Âåğîÿòíîñòü îáñëóæèâàíèÿ] = @probabilityService,
-	[Àáñîëşòíàÿ ïğîïóñêíàÿ ñïîñîáíîñòü] = @absProb,
-	[Ñğåäíåå ÷èñëî çàíÿòûõ êàíàëîâ] = @avgCountBusy,
-	[Ñğåäíåå ÷èñëî çàÿâîê â î÷åğåäè] = @avgCountRequest,
-	[Ñğåäíåå âğåìÿ îæèäàíèÿ îáñëóæèâàíèÿ â ìèíóòàõ] = @avgTimeOjid,
-	[Ñğåäíåå ÷èñëî çàÿâîê â ñèñòåìå] = @avgCountRequestSys,
-	[Ñğåäíåå âğåìÿ ïğåáûâàíèÿ â ñèñòåìå â ìèíóòàõ] = @avgTimeSys
+	[Ğ˜ÑÑ…Ğ¾Ğ´Ğ½Ñ‹Ğµ Ğ´Ğ°Ğ½Ğ½Ñ‹Ğµ Id] = @initDataId,
+	[Ğ’ĞµÑ€Ğ¾ÑÑ‚Ğ½Ğ¾ÑÑ‚ÑŒ Ğ¿Ñ€Ğ¾ÑÑ‚Ğ¾Ñ ĞºĞ°Ğ½Ğ°Ğ»Ğ¾Ğ² Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸Ñ, ĞºĞ¾Ğ³Ğ´Ğ° Ğ½ĞµÑ‚ Ğ·Ğ°ÑĞ²Ğ¾Ğº] = @probabilityDowntime,
+	[Ğ’ĞµÑ€Ğ¾ÑÑ‚Ğ½Ğ¾ÑÑ‚ÑŒ Ğ¾Ñ‚ĞºĞ°Ğ·Ğ° Ğ² Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸Ğ¸] = @probabilityRejection,
+	[Ğ’ĞµÑ€Ğ¾ÑÑ‚Ğ½Ğ¾ÑÑ‚ÑŒ Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸Ñ] = @probabilityService,
+	[ĞĞ±ÑĞ¾Ğ»ÑÑ‚Ğ½Ğ°Ñ Ğ¿Ñ€Ğ¾Ğ¿ÑƒÑĞºĞ½Ğ°Ñ ÑĞ¿Ğ¾ÑĞ¾Ğ±Ğ½Ğ¾ÑÑ‚ÑŒ] = @absProb,
+	[Ğ¡Ñ€ĞµĞ´Ğ½ĞµĞµ Ñ‡Ğ¸ÑĞ»Ğ¾ Ğ·Ğ°Ğ½ÑÑ‚Ñ‹Ñ… ĞºĞ°Ğ½Ğ°Ğ»Ğ¾Ğ²] = @avgCountBusy,
+	[Ğ¡Ñ€ĞµĞ´Ğ½ĞµĞµ Ñ‡Ğ¸ÑĞ»Ğ¾ Ğ·Ğ°ÑĞ²Ğ¾Ğº Ğ² Ğ¾Ñ‡ĞµÑ€ĞµĞ´Ğ¸] = @avgCountRequest,
+	[Ğ¡Ñ€ĞµĞ´Ğ½ĞµĞµ Ğ²Ñ€ĞµĞ¼Ñ Ğ¾Ğ¶Ğ¸Ğ´Ğ°Ğ½Ğ¸Ñ Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸Ñ Ğ² Ğ¼Ğ¸Ğ½ÑƒÑ‚Ğ°Ñ…] = @avgTimeOjid,
+	[Ğ¡Ñ€ĞµĞ´Ğ½ĞµĞµ Ñ‡Ğ¸ÑĞ»Ğ¾ Ğ·Ğ°ÑĞ²Ğ¾Ğº Ğ² ÑĞ¸ÑÑ‚ĞµĞ¼Ğµ] = @avgCountRequestSys,
+	[Ğ¡Ñ€ĞµĞ´Ğ½ĞµĞµ Ğ²Ñ€ĞµĞ¼Ñ Ğ¿Ñ€ĞµĞ±Ñ‹Ğ²Ğ°Ğ½Ğ¸Ñ Ğ² ÑĞ¸ÑÑ‚ĞµĞ¼Ğµ Ğ² Ğ¼Ğ¸Ğ½ÑƒÑ‚Ğ°Ñ…] = @avgTimeSys
 	where Id = @id
 end;
 go
 
-create procedure [ÄîáàâëåíèåÎ÷åğåäüÑÍåîãğàíè÷åííûìÎæèäàíèåì] @initDataId int, @probabilityDowntime float, @probabilityRejection float, @probabilityService float, @avgCountBusy float, @avgCountRequest float, @avgTimeOjid float, @avgCountRequestSys float, @avgTimeSys float, @coefBusy float, @abgCountReq float as
+create procedure [Ğ”Ğ¾Ğ±Ğ°Ğ²Ğ»ĞµĞ½Ğ¸ĞµĞÑ‡ĞµÑ€ĞµĞ´ÑŒĞ¡ĞĞµĞ¾Ğ³Ñ€Ğ°Ğ½Ğ¸Ñ‡ĞµĞ½Ğ½Ñ‹Ğ¼ĞĞ¶Ğ¸Ğ´Ğ°Ğ½Ğ¸ĞµĞ¼] @initDataId int, @probabilityDowntime float, @probabilityRejection float, @probabilityService float, @avgCountBusy float, @avgCountRequest float, @avgTimeOjid float, @avgCountRequestSys float, @avgTimeSys float, @coefBusy float, @abgCountReq float as
 begin
-	insert into [Î÷åğåäü ñ íåîãğàíè÷åííûì îæèäàíèåì] values
+	insert into [ĞÑ‡ĞµÑ€ĞµĞ´ÑŒ Ñ Ğ½ĞµĞ¾Ğ³Ñ€Ğ°Ğ½Ğ¸Ñ‡ĞµĞ½Ğ½Ñ‹Ğ¼ Ğ¾Ğ¶Ğ¸Ğ´Ğ°Ğ½Ğ¸ĞµĞ¼] values
 	(@initDataId, @probabilityDowntime, @probabilityRejection, @probabilityService, @avgCountBusy, @avgCountRequest, @avgTimeOjid, @avgCountRequestSys, @avgTimeSys, @coefBusy, @abgCountReq)
 end;
 go
 
-create procedure [ÈçìåíåíèåÎ÷åğåäüÑÍåîãğàíè÷åííûìÎæèäàíèåì] @id int, @initDataId int, @probabilityDowntime float, @probabilityRejection float, @probabilityService float, @avgCountBusy float, @avgCountRequest float, @avgTimeOjid float, @avgCountRequestSys float, @avgTimeSys float, @coefBusy float, @abgCountReq float as
+create procedure [Ğ˜Ğ·Ğ¼ĞµĞ½ĞµĞ½Ğ¸ĞµĞÑ‡ĞµÑ€ĞµĞ´ÑŒĞ¡ĞĞµĞ¾Ğ³Ñ€Ğ°Ğ½Ğ¸Ñ‡ĞµĞ½Ğ½Ñ‹Ğ¼ĞĞ¶Ğ¸Ğ´Ğ°Ğ½Ğ¸ĞµĞ¼] @id int, @initDataId int, @probabilityDowntime float, @probabilityRejection float, @probabilityService float, @avgCountBusy float, @avgCountRequest float, @avgTimeOjid float, @avgCountRequestSys float, @avgTimeSys float, @coefBusy float, @abgCountReq float as
 begin
-	update [Î÷åğåäü ñ íåîãğàíè÷åííûì îæèäàíèåì]
+	update [ĞÑ‡ĞµÑ€ĞµĞ´ÑŒ Ñ Ğ½ĞµĞ¾Ğ³Ñ€Ğ°Ğ½Ğ¸Ñ‡ĞµĞ½Ğ½Ñ‹Ğ¼ Ğ¾Ğ¶Ğ¸Ğ´Ğ°Ğ½Ğ¸ĞµĞ¼]
 	set 
-	[Èñõîäíûå äàííûå Id] = @initDataId,
-	[Âåğîÿòíîñòü ïğîñòîÿ êàíàëîâ îáñëóæèâàíèÿ, êîãäà íåò çàÿâîê] = @probabilityDowntime,
-	[Âåğîÿòíîñòü çàíÿòîñòè îáñëóæèâàíèåì âñåõ êàíàëîâ] = @probabilityRejection,
-	[Âåğîÿòíîñòü òîãî, ÷òî çàÿâêà îêàæåòñÿ â î÷åğåäè] = @probabilityService,
-	[Ñğåäíåå ÷èñëî çàÿâîê â î÷åğåäè] = @avgCountBusy,
-	[Ñğåäíåå âğåìÿ îæèäàíèÿ çàÿâêè â î÷åğåäè â ìèíóòàõ] = @avgCountRequest,
-	[Ñğåäíåå âğåìÿ ïğåáûâàíèÿ çàÿâêè â ÑÌÎ â ìèíóòàõ] = @avgTimeOjid,
-	[Ñğåäíåå ÷èñëî çàíÿòûõ îáñëóæèâàíèåì êàíàëîâ] = @avgCountRequestSys,
-	[Ñğåäíåå ÷èñëî ñâîáîäíûõ êàíàëîâ] = @avgTimeSys,
-	[Êîıôôèöèåíò çàíÿòîñòè êàíàëîâ îáñëóæèâàíèÿ] = @coefBusy,
-	[Ñğåäíåå ÷èñëî çàÿâîê â ÑÌÎ] = @abgCountReq
+	[Ğ˜ÑÑ…Ğ¾Ğ´Ğ½Ñ‹Ğµ Ğ´Ğ°Ğ½Ğ½Ñ‹Ğµ Id] = @initDataId,
+	[Ğ’ĞµÑ€Ğ¾ÑÑ‚Ğ½Ğ¾ÑÑ‚ÑŒ Ğ¿Ñ€Ğ¾ÑÑ‚Ğ¾Ñ ĞºĞ°Ğ½Ğ°Ğ»Ğ¾Ğ² Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸Ñ, ĞºĞ¾Ğ³Ğ´Ğ° Ğ½ĞµÑ‚ Ğ·Ğ°ÑĞ²Ğ¾Ğº] = @probabilityDowntime,
+	[Ğ’ĞµÑ€Ğ¾ÑÑ‚Ğ½Ğ¾ÑÑ‚ÑŒ Ğ·Ğ°Ğ½ÑÑ‚Ğ¾ÑÑ‚Ğ¸ Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸ĞµĞ¼ Ğ²ÑĞµÑ… ĞºĞ°Ğ½Ğ°Ğ»Ğ¾Ğ²] = @probabilityRejection,
+	[Ğ’ĞµÑ€Ğ¾ÑÑ‚Ğ½Ğ¾ÑÑ‚ÑŒ Ñ‚Ğ¾Ğ³Ğ¾, Ñ‡Ñ‚Ğ¾ Ğ·Ğ°ÑĞ²ĞºĞ° Ğ¾ĞºĞ°Ğ¶ĞµÑ‚ÑÑ Ğ² Ğ¾Ñ‡ĞµÑ€ĞµĞ´Ğ¸] = @probabilityService,
+	[Ğ¡Ñ€ĞµĞ´Ğ½ĞµĞµ Ñ‡Ğ¸ÑĞ»Ğ¾ Ğ·Ğ°ÑĞ²Ğ¾Ğº Ğ² Ğ¾Ñ‡ĞµÑ€ĞµĞ´Ğ¸] = @avgCountBusy,
+	[Ğ¡Ñ€ĞµĞ´Ğ½ĞµĞµ Ğ²Ñ€ĞµĞ¼Ñ Ğ¾Ğ¶Ğ¸Ğ´Ğ°Ğ½Ğ¸Ñ Ğ·Ğ°ÑĞ²ĞºĞ¸ Ğ² Ğ¾Ñ‡ĞµÑ€ĞµĞ´Ğ¸ Ğ² Ğ¼Ğ¸Ğ½ÑƒÑ‚Ğ°Ñ…] = @avgCountRequest,
+	[Ğ¡Ñ€ĞµĞ´Ğ½ĞµĞµ Ğ²Ñ€ĞµĞ¼Ñ Ğ¿Ñ€ĞµĞ±Ñ‹Ğ²Ğ°Ğ½Ğ¸Ñ Ğ·Ğ°ÑĞ²ĞºĞ¸ Ğ² Ğ¡ĞœĞ Ğ² Ğ¼Ğ¸Ğ½ÑƒÑ‚Ğ°Ñ…] = @avgTimeOjid,
+	[Ğ¡Ñ€ĞµĞ´Ğ½ĞµĞµ Ñ‡Ğ¸ÑĞ»Ğ¾ Ğ·Ğ°Ğ½ÑÑ‚Ñ‹Ñ… Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸ĞµĞ¼ ĞºĞ°Ğ½Ğ°Ğ»Ğ¾Ğ²] = @avgCountRequestSys,
+	[Ğ¡Ñ€ĞµĞ´Ğ½ĞµĞµ Ñ‡Ğ¸ÑĞ»Ğ¾ ÑĞ²Ğ¾Ğ±Ğ¾Ğ´Ğ½Ñ‹Ñ… ĞºĞ°Ğ½Ğ°Ğ»Ğ¾Ğ²] = @avgTimeSys,
+	[ĞšĞ¾ÑÑ„Ñ„Ğ¸Ñ†Ğ¸ĞµĞ½Ñ‚ Ğ·Ğ°Ğ½ÑÑ‚Ğ¾ÑÑ‚Ğ¸ ĞºĞ°Ğ½Ğ°Ğ»Ğ¾Ğ² Ğ¾Ğ±ÑĞ»ÑƒĞ¶Ğ¸Ğ²Ğ°Ğ½Ğ¸Ñ] = @coefBusy,
+	[Ğ¡Ñ€ĞµĞ´Ğ½ĞµĞµ Ñ‡Ğ¸ÑĞ»Ğ¾ Ğ·Ğ°ÑĞ²Ğ¾Ğº Ğ² Ğ¡ĞœĞ] = @abgCountReq
 	where Id = @id
 end;
