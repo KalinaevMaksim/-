@@ -10,5 +10,6 @@
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("models/smoazsmodel.context.tt")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("models/smoazsmodel.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("script/db-script.sql")]
 
 
